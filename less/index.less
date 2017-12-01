@@ -851,16 +851,20 @@ html,body{
             animation: flipInY 1s 1.2s both;
           }
           div{
+            position: relative;
             animation: flipInY 1s 1.2s both;
             width: 62%;
             height: .26rem;
             border: .01rem solid lightgray;
-            border-radius: .1rem;
+            border-radius: .2rem;
             div{
-              width: 90%;
+              position: absolute;
+              left: 0;
+              top: -.01rem;
+              height: 100%;
               background: lightgray;
               border-radius: .2rem;
-              margin-top: -.01rem;
+
             }
           }
           position: absolute;
