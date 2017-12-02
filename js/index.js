@@ -28,7 +28,7 @@ let swiperRender=(function () {
                     let itemAry=mySwiper.slides;
                     $.each(itemAry,function (index,item) {
                         /*acIndex==index?item.id=`slider${acIndex+1}`:item.id='no';*/
-                        acIndex==index?$(item).find('.con').addClass('show').removeClass('hide'):$(item).find('.con').addClass('hide').removeClass('show');
+                        acIndex==index?$(item).find('.con').addClass('show').removeClass('hide'):null/*$(item).find('.con').addClass('hide').removeClass('show')*/;
                         if(acIndex==0){
                             $img.removeClass('blink').addClass('show').on('animationend',function () {
                                 $(this).removeClass('show').addClass('blink');
